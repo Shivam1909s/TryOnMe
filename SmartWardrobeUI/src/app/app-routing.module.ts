@@ -5,7 +5,6 @@ import { TutorialComponent } from './tutorial/tutorial.component';
 import { ProductComponent } from './product/product.component';
 import { TeamComponent } from './team/team.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { UserImageThreedComponent } from './user-image-threed/user-image-threed.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/overview', pathMatch: 'full' },
@@ -13,8 +12,7 @@ const routes: Routes = [
   { path: 'tutorial', component: TutorialComponent },
   { path: 'product', component: ProductComponent },
   { path: 'team', component: TeamComponent },
-  { path: 'contact-us', component: ContactUsComponent },
-  {path: 'tryMe3D', component: UserImageThreedComponent}
+  { path: 'contact-us', component: ContactUsComponent }
 ];
 
 @NgModule({

@@ -101,3 +101,39 @@
 .nav-bar.collapsed .toggle-button {
     right: 15px;
 }
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .nav-bar {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        position: static;
+        padding: 20px 0;
+        transition: none;
+    }
+
+    .nav-bar.collapsed {
+        width: 100%;
+    }
+
+    .nav-bar ul {
+        flex-direction: row;
+        margin-left: 0;
+    }
+
+    .toggle-button {
+        position: static;
+        margin-top: 20px;
+        align-self: center;
+    }
+
+    .nav-bar ul li {
+        position: relative;
+        margin-right: 20px;
+    }
+}
